@@ -1,0 +1,178 @@
+/**
+ * code by https://github.com/mrcoles/markdown-css
+ * with some modifications
+ */
+
+.hack,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+code,
+blockquote,
+em,
+strong,
+code {
+  font-size: 1rem;
+  font-style: normal;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+code,
+blockquote,
+em,
+strong,
+code {
+  line-height: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+code,
+blockquote,
+ol,
+ul,
+li,
+p,
+section,
+header,
+footer {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+p,
+ul,
+ol,
+blockquote {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h1 {
+  position: relative;
+  display: inline-block;
+  display: table-cell;
+  padding: 20px 0 30px;
+  margin: 0;
+  overflow: hidden;
+}
+h1:after {
+  content: "====================================================================================================";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+h1 + * {
+  margin-top: 0;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin-bottom: 1.75rem;
+}
+
+h2:before,
+h3:before,
+h4:before,
+h5:before,
+h6:before {
+  display: inline;
+}
+h2:before {
+  content: "## ";
+}
+h3:before {
+  content: "### ";
+}
+h4:before {
+  content: "#### ";
+}
+h5:before {
+  content: "##### ";
+}
+h6:before {
+  content: "###### ";
+}
+li {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+}
+li:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ul > li:after {
+  content: "-";
+}
+ol {
+  counter-reset: ol;
+}
+ol > li:after {
+  content: counter(ol) ".";
+  counter-increment: ol;
+}
+blockquote {
+  position: relative;
+  padding-left: 17px;
+  padding-left: 2ch;
+  overflow: hidden;
+}
+blockquote:after {
+  content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
+  white-space: pre;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 20px;
+}
+em:before,
+em:after {
+  content: "*";
+  display: inline;
+}
+pre code:before,
+pre code:after {
+  content: '';
+}
+code {
+  font-weight: 700;
+}
+code:before,
+code:after {
+  content: "`";
+  display: inline;
+}
+
+hr {
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  border: 0;
+  margin: 20px 0;
+}
+hr:after {
+  content: "----------------------------------------------------------------------------------------------------";
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 20px;
+  width: 100%;
+  word-wrap: break-word;
+}
+@-moz-document url-prefix() {
+  h1 {
+    display: block;
+  }
+}

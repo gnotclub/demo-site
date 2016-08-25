@@ -1,0 +1,27 @@
+{{ define "manpage" }}
+<!DOCTYPE html>
+<html>
+	{{ template "head" . }}
+
+	{{ $upperTitle := index .Page.FrontMatter "upperTitle" }}
+	{{ $title := index .Page.FrontMatter "title" }}
+	{{ $section := index .Page.FrontMatter "section" }}
+	<body>
+		<div class="container">
+			<main class="terminal">
+				<div class="row">
+					<div class="col col-left">
+						{{ $upperTitle }}({{ $section }})
+					</div>
+					<div class="col col-mid"><a class="no-dec" href="{{ .SiteConfig.BasePath }}/">{{ .SiteConfig.Title }}</a></div>
+					<div class="col col-right">
+						{{ $upperTitle }}({{ $section }})
+					</div>
+				</div>
+
+				{{ .Page.Content }}
+			</main>
+		</div>
+	</body>
+</html>
+{{ end }}

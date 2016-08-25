@@ -5,7 +5,7 @@ upperTitle: GNOTCLUB
 section: 1
 ---
 
-NAME
+<a href="https://www.youtube.com/watch?v=_9wPuXhQ_zs&feature=youtu.be&t=16s" class="no-dec"i target="_blank">NAME</a>
 
 <div class="manp">gnotclub - The Gnot Club in its glory.</div>
 

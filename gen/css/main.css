@@ -59,3 +59,11 @@ ul>li:after {
 .manp {
 	padding-left: 40px;
 }
+
+::selection {
+	background: #b0b0a2
+}
+
+::-moz-selection {
+	background: #b0b0a2;
+}

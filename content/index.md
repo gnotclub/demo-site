@@ -21,8 +21,7 @@ REPORTING BUGS
 
 <div class="manp">
 	If you want to get in touch with us,
-	send an e-mail to the guy who paid for this at
-	apk@gnot.club.
+	send an e-mail to apk@pluvi.us 
 </div>
 
 SEE ALSO

@@ -18,10 +18,10 @@ SYNOPSIS
 <ul>
 	<li>apk</li>
 	<li>arc</li>
-	<li>boobah</li>
 	<li>lazr</li>
 	<li>neeasade</li>
 	<li>rocx</li>
 	<li>tudor</li>
+	<li>xero</li>
 </ul>
 </div>

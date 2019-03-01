@@ -21,7 +21,7 @@ REPORTING BUGS
 
 <div class="manp">
 	If you want to get in touch with us,
-	send an e-mail to apk@pluvi.us 
+	send an e-mail to apk@spacecowboy.xyz
 </div>
 
 SEE ALSO
